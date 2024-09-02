@@ -124,19 +124,23 @@ body {
 }
 
 /* Projects section */
-.project {
+.sample {
   position: relative;
+}
+
+.project {
+  width: 350px;
   border: 1px solid #aaa;
 }
 
-.project img {
+.sample img {
   width: 100%;
-  height: 350px;
+  height: 380px;
 }
 
 .layer {
-  width: 100%;
-  height: 350px;
+  width: 350px;
+  height: 380px;
   background-color: rgba(0, 0, 0, 0.7);
   position: absolute;
   opacity: 0;
