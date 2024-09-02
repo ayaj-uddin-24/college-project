@@ -73,6 +73,8 @@ body {
 }
 
 /* ============================== Starting the home page ============================== */
+
+/* Navbar section */
 nav ul li a {
   position: relative;
   transition: 0.3s;
