@@ -70,13 +70,16 @@
     <!-- ========== Closing the navbar section ========== -->
 
     <!-- ========== Starting the login section ========== -->
-    <div class="signUp row justify-content-center align-items-center g-2 pb-5">
+    <div
+      class="signUp row justify-content-center align-items-center g-2 pb-5"
+      id="login"
+    >
       <div class="signUp-left col d-none d-lg-block">
-        <img
-          src="../images/form-image.webp"
-          class="img-fluid"
-          alt="form image"
-        />
+        <!-- <img
+        src="../images/form-image.webp"
+        class="img-fluid"
+        alt="form image"
+      /> -->
       </div>
       <div class="signUp-right col">
         <form
@@ -84,32 +87,35 @@
           method="post"
           class="p-3 rounded-4 mx-auto mt-5 mt-xl-0"
         >
-          <h2 class="fw-bold pb-3">Sign Up From</h2>
-          <input
-            type="name"
-            name="name"
-            id="name"
-            placeholder="Enter your name"
-            class="form-control mb-4"
-            required
-          />
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Enter your email"
-            class="form-control mb-4"
-            required
-          />
-          <input
-            type="password"
-            name="password"
-            id="password"
-            placeholder="Enter your password"
-            class="form-control mb-4"
-            required
-          />
-          <button class="btn btn-success form-control">Submit</button>
+          <h2 class="fw-bold pb-3 text-center">Sign Up From</h2>
+          <div class="form-floating mb-3">
+            <input
+              type="text"
+              class="form-control"
+              id="floatingInput"
+              placeholder="John Doe"
+            />
+            <label for="floatingInput">Name</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input
+              type="email"
+              class="form-control"
+              id="floatingInput"
+              placeholder="name@example.com"
+            />
+            <label for="floatingInput">Email address</label>
+          </div>
+          <div class="form-floating">
+            <input
+              type="password"
+              class="form-control"
+              id="floatingPassword"
+              placeholder="Password"
+            />
+            <label for="floatingPassword">Password</label>
+          </div>
+          <button class="btn mt-3 form-control">Submit</button>
           <p class="pt-3">
             Have an account?
             <a href="./signin.html" class="text-decoration-none">
@@ -122,7 +128,7 @@
     <!-- ========== Closing the login section ========== -->
 
     <!-- ========== Starting the footer section ========== -->
-    <footer class="bg-dark text-white pt-5 pb-4 mt-5" id="footer">
+    <footer class="bg-dark text-white pt-5 pb-4" id="footer">
       <div class="container text-center text-md-start">
         <div class="row">
           <div class="col-md-6 col-lg-3 col-xl-3 mx-auto mt-3">

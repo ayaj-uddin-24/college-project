@@ -293,9 +293,38 @@ nav ul li a:hover::after {
 /* ============================== Starting the login page ============================== */
 
 /* sign up form */
+#login {
+  background: url("./assets/images/login-background.jpg") no-repeat center center;
+  background-size: cover;
+  height: 90vh;
+  margin-top: -20px;
+}
+
 .signUp-right form {
-  width: 400px;
-  background-color: #c8e8e6;
+  width: 380px;
+  /* background-color: #c8e8e6; */
+}
+
+.signUp-right form input {
+  border: none;
+  background-color: transparent;
+  border-bottom: 1.5px solid #3300ff;
+  border-radius: 0;
+}
+
+.signUp-right form input:hover,
+.signUp-right form input:focus {
+  box-shadow: none;
+  background-color: transparent;
+}
+
+.signUp-right form button {
+  background-color: #3300ff;
+  color: #fff;
+}
+
+.signUp-right form button:hover{
+  border: 1px solid #3300ff;
 }
 
 /* ============================== Styles for large device ============================== */
