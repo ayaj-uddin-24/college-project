@@ -73,6 +73,25 @@ body {
 }
 
 /* ============================== Starting the home page ============================== */
+nav ul li a {
+  position: relative;
+  transition: 0.3s;
+}
+
+nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  position: absolute;
+  top: 35px;
+  left: 0;
+  background-color: #3300ff;
+  transition: 0.3s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
 
 /* hero section */
 #home-hero {
