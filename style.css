@@ -147,6 +147,7 @@ nav ul li a:hover::after {
 /* Projects section */
 .sample {
   position: relative;
+  margin: auto;
 }
 
 .project {
@@ -294,7 +295,8 @@ nav ul li a:hover::after {
 
 /* sign up form */
 #login {
-  background: url("./assets/images/login-background.jpg") no-repeat center center;
+  background: url("./assets/images/login-background.jpg") no-repeat center
+    center;
   background-size: cover;
   height: 90vh;
   margin-top: -20px;
@@ -302,7 +304,6 @@ nav ul li a:hover::after {
 
 .signUp-right form {
   width: 380px;
-  /* background-color: #c8e8e6; */
 }
 
 .signUp-right form input {
@@ -323,17 +324,19 @@ nav ul li a:hover::after {
   color: #fff;
 }
 
-.signUp-right form button:hover{
+.signUp-right form button:hover {
   border: 1px solid #3300ff;
 }
 
+/* ============================== Styles for extra large device ============================== */
+@media screen and (max-width: 1200px) {
+  .projects {
+    grid-template-columns: auto auto;
+  }
+}
 /* ============================== Styles for large device ============================== */
 @media screen and (max-width: 992px) {
   .projects .row {
-    grid-template-columns: auto auto;
-  }
-
-  .projects {
     grid-template-columns: auto auto;
   }
 
