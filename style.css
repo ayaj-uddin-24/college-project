@@ -198,6 +198,10 @@ nav ul li a:hover::after {
   background-size: cover;
 }
 
+.about-us #mission p {
+  text-align: justify;
+}
+
 .team-member:hover {
   transform: scale(1.05);
   transition: transform 0.3s ease-in-out;
