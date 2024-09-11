@@ -14,6 +14,32 @@ html {
 
 body {
   padding-top: 90px;
+  font-family: "Nunito", sans-serif;
+}
+
+:root {
+  --primary-color: #3300ff;
+}
+
+.btn-primary {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.btn-outline-primary {
+  background: transparent;
+  border: 1px solid #3300ff;
+  color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+  background: var(--primary-color);
+}
+
+h1 span,
+h2 span,
+h5 span {
+  color: var(--primary-color);
 }
 
 /* Common codes */
@@ -42,7 +68,7 @@ body {
   content: "";
   width: 50px;
   height: 3px;
-  background-color: #3300ff;
+  background: var(--primary-color);
   position: absolute;
   top: 55px;
   left: 39%;
@@ -79,7 +105,6 @@ nav ul li a {
   position: relative;
   transition: 0.3s;
 }
-
 nav ul li a::after {
   content: "";
   width: 0;
@@ -87,7 +112,7 @@ nav ul li a::after {
   position: absolute;
   top: 35px;
   left: 0;
-  background-color: #3300ff;
+  background: var(--primary-color);
   transition: 0.3s;
 }
 
@@ -302,12 +327,7 @@ nav ul li a:hover::after {
   background: url("./assets/images/login-background.jpg") no-repeat center
     center;
   background-size: cover;
-  height: 90vh;
-  margin-top: -20px;
-}
-
-.signUp-right form {
-  width: 380px;
+  margin-top: -18px;
 }
 
 .signUp-right form input {
@@ -324,7 +344,7 @@ nav ul li a:hover::after {
 }
 
 .signUp-right form button {
-  background-color: #3300ff;
+  background: var(--primary-color);
   color: #fff;
 }
 
@@ -353,13 +373,21 @@ nav ul li a:hover::after {
   }
 }
 /* ============================== Styles for medium device ============================== */
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
+  #navbar ul li a {
+    display: inline-block;
+  }
+
   #about-modal .row {
     grid-template-columns: auto;
   }
 
   .projects {
     grid-template-columns: auto;
+  }
+
+  #account {
+    color: #fff;
   }
 }
 /* ============================== Styles for small device ============================== */
