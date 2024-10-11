@@ -105,19 +105,20 @@ nav ul li a {
   position: relative;
   transition: 0.3s;
 }
+
 nav ul li a::after {
   content: "";
   width: 0;
   height: 2px;
   position: absolute;
   top: 35px;
-  left: 0;
+  left: 25%;
   background: var(--primary-color);
   transition: 0.3s;
 }
 
 nav ul li a:hover::after {
-  width: 100%;
+  width: 50%;
 }
 
 /* hero section */
@@ -358,6 +359,7 @@ nav ul li a:hover::after {
     grid-template-columns: auto auto;
   }
 }
+
 /* ============================== Styles for large device ============================== */
 @media screen and (max-width: 992px) {
   .projects .row {
@@ -372,6 +374,7 @@ nav ul li a:hover::after {
     grid-template-columns: auto auto;
   }
 }
+
 /* ============================== Styles for medium device ============================== */
 @media only screen and (max-width: 768px) {
   #navbar ul li a {
@@ -390,6 +393,7 @@ nav ul li a:hover::after {
     color: #fff;
   }
 }
+
 /* ============================== Styles for small device ============================== */
 @media screen and (max-width: 580px) {
   .projects .row {

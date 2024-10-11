@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TechCluder - About Us</title>
+    <title>TechCluder | About Us</title>
 
     <!-- Bootstrap css file here -->
     <link rel="stylesheet" href="../bootstrap/bootstrap.min.css" />
@@ -27,10 +27,16 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Animation css file -->
+    <link rel="stylesheet" href="../animation/animate.min.css" />
   </head>
   <body>
     <!-- ========== Starting the navbar section ========== -->
-    <nav class="navbar navbar-expand-md navbar-body bg-body shadow fixed-top" id="navbar">
+    <nav
+      class="navbar navbar-expand-md navbar-body bg-body shadow fixed-top"
+      id="navbar"
+    >
       <div class="container">
         <a href="../../index.html" class="navbar-brand text-dark">
           <h2 class="fw-bold">Tech<span>Cluder</span></h2>
@@ -81,23 +87,27 @@
         class="header-section text-white d-flex justify-content-center align-items-center text-center"
       >
         <div>
-          <h1>About Us</h1>
-          <p class="small">Get to know more about our team and our mission</p>
-          <a href="#mission" class="btn btn-primary mt-2"> Learn More </a>
+          <h1 class="animated fadeInDown">About Us</h1>
+          <p class="small animated fadeIn">
+            Get to know more about our team and our mission
+          </p>
+          <a href="#mission" class="btn btn-primary mt-2 animated fadeInRight">
+            Learn More
+          </a>
         </div>
       </header>
 
       <section id="mission" class="py-5">
         <div class="container">
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 wow fadeInLeft">
               <img
                 src="../images/about-us.jpg"
                 class="img-fluid rounded"
                 alt="Mission Image"
               />
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 wow fadeInUp">
               <h2>Our Mission</h2>
               <p class="small">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
@@ -114,7 +124,7 @@
                 quisquam quae commodi vero doloremque nesciunt alias ipsum
                 maxime quidem.
               </p>
-              <button class="btn btn-primary">Learn More</button>
+              <button class="btn btn-primary wow fadeInUp">Learn More</button>
             </div>
           </div>
         </div>
@@ -131,7 +141,10 @@
             </p>
           </div>
           <div class="row">
-            <div class="team shadow bg-white">
+            <div
+              class="team shadow bg-white wow fadeInUp"
+              data-wow-delay="0.1s"
+            >
               <img
                 src="../images/team-1.png"
                 alt="Team Member 1"
@@ -146,7 +159,10 @@
                 <i class="bi bi-twitter"></i>
               </div>
             </div>
-            <div class="team shadow bg-white">
+            <div
+              class="team shadow bg-white wow fadeInUp"
+              data-wow-delay="0.3s"
+            >
               <img
                 src="../images/team-3.png"
                 alt="Team Member 1"
@@ -161,7 +177,10 @@
                 <i class="bi bi-twitter"></i>
               </div>
             </div>
-            <div class="team shadow bg-white">
+            <div
+              class="team shadow bg-white wow fadeInUp"
+              data-wow-delay="0.5s"
+            >
               <img
                 src="../images/team-2.jpg"
                 alt="Team Member 1"
@@ -176,7 +195,10 @@
                 <i class="bi bi-twitter"></i>
               </div>
             </div>
-            <div class="team shadow bg-white">
+            <div
+              class="team shadow bg-white wow fadeInUp"
+              data-wow-delay="0.1s"
+            >
               <img
                 src="../images/team-5.jpg"
                 alt="Team Member 1"
@@ -191,7 +213,10 @@
                 <i class="bi bi-twitter"></i>
               </div>
             </div>
-            <div class="team shadow bg-white">
+            <div
+              class="team shadow bg-white wow fadeInUp"
+              data-wow-delay="0.3s"
+            >
               <img
                 src="../images/team-4.jpg"
                 alt="Team Member 1"
@@ -206,7 +231,10 @@
                 <i class="bi bi-twitter"></i>
               </div>
             </div>
-            <div class="team shadow bg-white">
+            <div
+              class="team shadow bg-white wow fadeInUp"
+              data-wow-delay="0.5s"
+            >
               <img
                 src="../images/profile.jpg"
                 alt="Team Member 1"
@@ -221,7 +249,10 @@
                 <i class="bi bi-twitter"></i>
               </div>
             </div>
-            <div class="team shadow bg-white">
+            <div
+              class="team shadow bg-white wow fadeInUp"
+              data-wow-delay="0.1s"
+            >
               <img
                 src="../images/profile.jpg"
                 alt="Team Member 1"
@@ -236,7 +267,10 @@
                 <i class="bi bi-twitter"></i>
               </div>
             </div>
-            <div class="team shadow bg-white">
+            <div
+              class="team shadow bg-white wow fadeInUp"
+              data-wow-delay="0.3s"
+            >
               <img
                 src="../images/profile.jpg"
                 alt="Team Member 1"
@@ -251,7 +285,10 @@
                 <i class="bi bi-twitter"></i>
               </div>
             </div>
-            <div class="team shadow bg-white">
+            <div
+              class="team shadow bg-white wow fadeInUp"
+              data-wow-delay="0.5s"
+            >
               <img
                 src="../images/profile.jpg"
                 alt="Team Member 1"
@@ -397,5 +434,14 @@
       </div>
     </footer>
     <!-- ========== Closing the footer section ========== -->
+
+    <!-- jQuery file -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <!-- Animation js file -->
+    <script src="../animation/wow.min.js"></script>
+
+    <!-- Main js file -->
+    <script src="../../script.js"></script>
   </body>
 </html>

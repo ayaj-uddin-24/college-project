@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TechCluder - Home Page</title>
+    <title>TechCluder | Home</title>
 
     <!-- Bootstrap css file here -->
     <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />
@@ -27,6 +27,9 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Animation css file -->
+    <link rel="stylesheet" href="./assets/animation/animate.min.css" />
   </head>
   <body>
     <!-- ========== Starting the navbar section ========== -->
@@ -92,14 +95,16 @@
       id="home-hero"
     >
       <div class="container text-center">
-        <h1 class="display-4 fw-bold">
+        <h1 class="display-4 fw-bold animated slideInDown">
           Welcome to Our Tech<span>Cluder</span>
         </h1>
         <p class="small mb-4">
           We provide the best solutions for your business needs. Let’s make
           something amazing together!
         </p>
-        <a href="./assets/views/courses.html" class="btn btn-primary"
+        <a
+          href="./assets/views/courses.html"
+          class="btn btn-primary animated slideInRight"
           >Get Started
         </a>
       </div>
@@ -117,7 +122,10 @@
         </p>
       </div>
       <div class="courses-items">
-        <div class="card card-custom shadow rounded-4">
+        <div
+          class="card card-custom shadow rounded-4 wow fadeInUp"
+          data-wow-delay="0.1s"
+        >
           <img
             src="./assets/images/about-us-banner.png"
             class="card-img-top"
@@ -135,7 +143,10 @@
             </a>
           </div>
         </div>
-        <div class="card card-custom shadow rounded-4">
+        <div
+          class="card card-custom shadow rounded-4 wow fadeInUp"
+          data-wow-delay="0.3s"
+        >
           <img
             src="./assets/images/contact-us-banner.webp"
             class="card-img-top"
@@ -153,7 +164,10 @@
             </a>
           </div>
         </div>
-        <div class="card card-custom shadow rounded-4">
+        <div
+          class="card card-custom shadow rounded-4 wow fadeInUp"
+          data-wow-delay="0.5s"
+        >
           <img
             src="./assets/images/project-banner.jpg"
             class="card-img-top"
@@ -171,7 +185,10 @@
             </a>
           </div>
         </div>
-        <div class="card card-custom shadow rounded-4">
+        <div
+          class="card card-custom shadow rounded-4 wow fadeInUp"
+          data-wow-delay="0.1s"
+        >
           <img
             src="./assets/images/home-banner.jpg"
             class="card-img-top"
@@ -189,7 +206,10 @@
             </a>
           </div>
         </div>
-        <div class="card card-custom shadow rounded-4">
+        <div
+          class="card card-custom shadow rounded-4 wow fadeInUp"
+          data-wow-delay="0.3s"
+        >
           <img
             src="./assets/images/courses-banner.jpg"
             class="card-img-top"
@@ -228,7 +248,7 @@
       </div>
 
       <div class="projects">
-        <div class="sample">
+        <div class="sample wow slideInUp" data-wow-delay="0.1s">
           <div class="project">
             <div class="layer"></div>
             <img src="./assets/images/project-1.jpg" alt="" />
@@ -243,7 +263,7 @@
             </div>
           </div>
         </div>
-        <div class="sample">
+        <div class="sample wow slideInUp" data-wow-delay="0.3s">
           <div class="project">
             <div class="layer"></div>
             <img src="./assets/images/project-2.jpg" alt="" />
@@ -258,7 +278,7 @@
             </div>
           </div>
         </div>
-        <div class="sample">
+        <div class="sample wow slideInUp" data-wow-delay="0.5s">
           <div class="project">
             <div class="layer"></div>
             <img src="./assets/images/project-3.jpg" alt="" />
@@ -407,5 +427,14 @@
       </div>
     </footer>
     <!-- ========== Closing the footer section ========== -->
+
+    <!-- jQuery file -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <!-- Animation js file -->
+    <script src="./assets/animation/wow.min.js"></script>
+
+    <!-- Main js file -->
+    <script src="./script.js"></script>
   </body>
 </html>

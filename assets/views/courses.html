@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TechCluder - Courses Page</title>
+    <title>TechCluder | Courses</title>
 
     <!-- Bootstrap css file here -->
     <link rel="stylesheet" href="../bootstrap/bootstrap.min.css" />
@@ -27,10 +27,16 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Animation css file -->
+    <link rel="stylesheet" href="../animation/animate.min.css" />
   </head>
   <body>
     <!-- ========== Starting the navbar section ========== -->
-    <nav class="navbar navbar-expand-md navbar-body bg-body shadow fixed-top" id="navbar">
+    <nav
+      class="navbar navbar-expand-md navbar-body bg-body shadow fixed-top"
+      id="navbar"
+    >
       <div class="container">
         <a href="../../index.html" class="navbar-brand text-dark">
           <h2 class="fw-bold">Tech<span>Cluder</span></h2>
@@ -81,9 +87,14 @@
         class="header-section bg-dark text-white d-flex justify-content-center align-items-center text-center mb-5"
       >
         <div>
-          <h1>Our Courses</h1>
-          <p>We recommend you to visit our projects and rate them.</p>
-          <a href="#mission" class="btn btn-primary btn-md mt-2">
+          <h1 class="animated fadeInUp">Our Courses</h1>
+          <p class="animated fadeIn">
+            We recommend you to visit our projects and rate them.
+          </p>
+          <a
+            href="#mission"
+            class="btn btn-primary btn-md mt-2 animated fadeInDown"
+          >
             Learn More
           </a>
         </div>
@@ -98,7 +109,10 @@
           </p>
         </div>
         <div class="courses-items">
-          <div class="card card-custom shadow rounded-4">
+          <div
+            class="card card-custom shadow rounded-4 wow fadeInUp"
+            data-wow-delay="0.1s"
+          >
             <img
               src="../images/about-us-banner.png"
               class="card-img-top"
@@ -117,7 +131,10 @@
               </a>
             </div>
           </div>
-          <div class="card card-custom shadow rounded-4">
+          <div
+            class="card card-custom shadow rounded-4 wow fadeInUp"
+            data-wow-delay="0.3s"
+          >
             <img
               src="../images/contact-us-banner.webp"
               class="card-img-top"
@@ -136,7 +153,10 @@
               </a>
             </div>
           </div>
-          <div class="card card-custom shadow rounded-4">
+          <div
+            class="card card-custom shadow rounded-4 wow fadeInUp"
+            data-wow-delay="0.5s"
+          >
             <img
               src="../images/project-banner.jpg"
               class="card-img-top"
@@ -155,7 +175,10 @@
               </a>
             </div>
           </div>
-          <div class="card card-custom shadow rounded-4">
+          <div
+            class="card card-custom shadow rounded-4 wow fadeInUp"
+            data-wow-delay="0.1s"
+          >
             <img
               src="../images/home-banner.jpg"
               class="card-img-top"
@@ -174,7 +197,10 @@
               </a>
             </div>
           </div>
-          <div class="card card-custom shadow rounded-4">
+          <div
+            class="card card-custom shadow rounded-4 wow fadeInUp"
+            data-wow-delay="0.3s"
+          >
             <img
               src="../images/courses-banner.jpg"
               class="card-img-top"
@@ -193,7 +219,10 @@
               </a>
             </div>
           </div>
-          <div class="card card-custom shadow rounded-4">
+          <div
+            class="card card-custom shadow rounded-4 wow fadeInUp"
+            data-wow-delay="0.5s"
+          >
             <img
               src="../images/form-image.webp"
               class="card-img-top"
@@ -342,5 +371,14 @@
       </div>
     </footer>
     <!-- ========== Closing the footer section ========== -->
+
+    <!-- jQuery file -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <!-- Animation js file -->
+    <script src="../animation/wow.min.js"></script>
+
+    <!-- Main js file -->
+    <script src="../../script.js"></script>
   </body>
 </html>
