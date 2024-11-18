@@ -222,7 +222,7 @@ a {
 
 .page-header {
   background: linear-gradient(rgba(6, 3, 21, 0.5), rgba(6, 3, 21, 0.5)),
-    url(../img/carousel-1.jpg) center center no-repeat;
+    url(./assets/img/carousel-1.jpg) center center no-repeat;
   background-size: cover;
 }
 
@@ -393,7 +393,7 @@ a {
 /* ==================== Styling the footer section ==================== */
 .footer {
   background: linear-gradient(rgba(6, 3, 21, 0.5), rgba(6, 3, 21, 0.5)),
-    url(../img/map.png) center center no-repeat;
+    url(./assets/img/map.png) center center no-repeat;
   background-size: cover;
 }
 
@@ -447,4 +447,27 @@ a {
 
 .footer .copyright a {
   color: var(--light);
+}
+
+.signup-form {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.form-title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #495057;
+}
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+}
+.btn-primary:hover {
+  background-color: #0056b3;
 }
