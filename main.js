@@ -104,11 +104,7 @@
   });
 })(jQuery);
 
-document.addEventListener("DOMContentLoaded", function () {
-  setTimeout(() => {
-    const myModal = new bootstrap.Modal(
-      document.getElementById("exampleModal")
-    );
-    myModal.show();
-  }, 20000);
+document.addEventListener("dblclick", function () {
+  const myModal = new bootstrap.Modal(document.getElementById("exampleModal"));
+  myModal.show();
 });
